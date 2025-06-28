@@ -1,0 +1,13 @@
+[build]
+  command = "echo 'No build required for static site'"
+  publish = "./"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.production]
+  command = "echo 'No build required for static site'"
+  publish = "./"
